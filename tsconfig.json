@@ -3,7 +3,6 @@
 		"allowSyntheticDefaultImports": false,
 		"target": "es5",
 		"module": "commonjs",
-		"jsx": "react",
 		"moduleResolution": "node",
 		"noImplicitAny": false,
 		"noUnusedLocals": false,
@@ -14,7 +13,8 @@
 		"noImplicitThis": true,
 		"sourceMap": true,
 		"allowJs": true,
-		"lib": ["es2015", "es2016", "es2017", "esnext.asynciterable", "dom"]
+		"lib": ["es2015", "es2016", "es2017", "esnext.asynciterable", "dom"],
+		"outDir": "build"
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
