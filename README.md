@@ -30,11 +30,7 @@
 	```sh
 	gcloud iam service-accounts keys create credentials.json --iam-account chet-dev@translator-246304.iam.gserviceaccount.com
 	```
-- Build the JavaScript
-	```sh
-	npm run build
-	```
-- Start the development server
+- Start the development server (you may have to build the first bundle `npm run build` before you do this.)
 	```sh
 	npm start
 	```
