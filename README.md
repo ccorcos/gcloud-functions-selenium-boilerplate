@@ -18,6 +18,18 @@
 	```
 
 ## Development
+- (optional) If you want to use gcloud services, you'll need to create some credentials.
+	```sh
+	gcloud iam service-accounts create chet-dev
+	```
+- Add an owner policy
+	```sh
+	gcloud projects add-iam-policy-binding translator-246304 --member "serviceAccount:chet-dev@translator-246304.iam.gserviceaccount.com" --role "roles/owner"
+	```
+- Create the credentials file.
+	```sh
+	gcloud iam service-accounts keys create credentials.json --iam-account chet-dev@translator-246304.iam.gserviceaccount.com
+	```
 - Build the JavaScript
 	```sh
 	npm run build
