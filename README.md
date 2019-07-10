@@ -16,3 +16,4 @@ Deploying
 - https://cloud.google.com/functions/docs/deploying/filesystem
 - build: `npm run build`
 - `gcloud functions deploy translate --runtime nodejs10 --entry-point default --trigger-http`
+- test: `curl https://us-central1-translator-246304.cloudfunctions.net/translate`

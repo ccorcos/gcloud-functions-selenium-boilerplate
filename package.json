@@ -1,10 +1,11 @@
 {
-	"name": "typescript-boilerplate",
+	"name": "translator",
 	"version": "1.0.0",
-	"description": "boilerplate for web applications using typescript and webpack",
+	"description": "boilerplate for gcloud functions",
 	"main": "build/main.js",
 	"scripts": {
-		"build": "rm -rf build && tsc"
+		"build": "rm -rf build && tsc",
+		"deploy": "gcloud functions deploy translate --runtime nodejs10 --entry-point default --trigger-http"
 	},
 	"keywords": [],
 	"author": "",
