@@ -1,5 +1,5 @@
 {
-	"name": "translator",
+	"name": "translate",
 	"version": "1.0.0",
 	"description": "boilerplate for gcloud functions",
 	"main": "build/main.js",
