@@ -4,6 +4,7 @@
 	"description": "boilerplate for gcloud functions",
 	"main": "build/main.js",
 	"scripts": {
+		"start": "functions-framework --target=default",
 		"build": "rm -rf build && tsc",
 		"deploy": "gcloud functions deploy translate --runtime nodejs10 --entry-point default --trigger-http"
 	},
@@ -11,6 +12,7 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
+		"@google-cloud/functions-framework": "^1.1.1",
 		"lodash": "4.17.13"
 	},
 	"devDependencies": {

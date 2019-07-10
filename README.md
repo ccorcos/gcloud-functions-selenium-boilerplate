@@ -17,6 +17,20 @@
 	gcloud config set project translator-246304
 	```
 
+## Development
+- Build the JavaScript
+	```sh
+	npm run build
+	```
+- Start the development server
+	```sh
+	npm start
+	```
+- Test that its working
+	```sh
+	curl curl http://localhost:8080/
+	```
+
 ## Deploying
 - [Read about it here](https://cloud.google.com/functions/docs/deploying/filesystem)
 - Build the TypeScript files:
@@ -36,4 +50,4 @@
 ## Resources
 - https://www.toptal.com/nodejs/serverless-nodejs-using-google-cloud
 - https://cloud.google.com/functions/docs/writing/
-
+- https://cloud.google.com/functions/docs/functions-framework
