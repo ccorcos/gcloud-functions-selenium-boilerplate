@@ -1,5 +1,7 @@
 # Google Cloud Function Selenium Example
 
+Extends [gcloud-function-boilerplate](https://github.com/ccorcos/gcloud-function-boilerplate) with Selenium.
+
 ## Setup
 - [Signup for Google Cloud](https://console.cloud.google.com)
 - Create a new project project.
