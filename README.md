@@ -57,6 +57,8 @@ Extends [gcloud-function-boilerplate](https://github.com/ccorcos/gcloud-function
 	curl https://us-central1-selenium-258105.cloudfunctions.net/selenium
 	```
 
+	**NOTE** you can modify the memory allocation and timeout of the function in the deploy script. Current defaults are `--memory=1024MB --timeout=300s`.
+
 ## Resources
 - https://www.toptal.com/nodejs/serverless-nodejs-using-google-cloud
 - https://cloud.google.com/functions/docs/writing/
