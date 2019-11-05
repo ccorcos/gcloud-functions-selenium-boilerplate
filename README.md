@@ -2,6 +2,8 @@
 
 Extends [gcloud-function-boilerplate](https://github.com/ccorcos/gcloud-function-boilerplate) with Selenium.
 
+**WARNING** The maximum allowable memory for a gcloud function is 2GB. Deploying this example with only 1GB memory crashed. GCloud function also only allow a maximum of 9 minutes for your function to run. So be aware of these constraints before you build something on top of this!
+
 ## Setup
 - [Signup for Google Cloud](https://console.cloud.google.com)
 - Create a new project project.
