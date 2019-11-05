@@ -1,5 +1,5 @@
 {
-	"name": "translate",
+	"name": "selenium",
 	"version": "1.0.0",
 	"description": "boilerplate for gcloud functions",
 	"main": "build/main.js",
@@ -12,7 +12,7 @@
 		"watch-tsc": "tsc --watch",
 		"server": "GOOGLE_APPLICATION_CREDENTIALS=credentials.json functions-framework --target=default",
 		"build": "rm -rf build && tsc",
-		"deploy": "gcloud functions deploy translate --runtime nodejs10 --entry-point default --trigger-http",
+		"deploy": "gcloud functions deploy selenium --runtime nodejs10 --entry-point default --trigger-http",
 		"release": "npm run build && npm run deploy"
 	},
 	"keywords": [],

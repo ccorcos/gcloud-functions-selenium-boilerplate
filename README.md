@@ -1,4 +1,4 @@
-# Google Cloud Function Boilerplate
+# Google Cloud Function Selenium Example
 
 ## Setup
 - [Signup for Google Cloud](https://console.cloud.google.com)
@@ -14,7 +14,7 @@
 - Find the project id you just created and set it as the current project.
 	```sh
 	gcloud projects list
-	gcloud config set project translator-246304
+	gcloud config set project selenium-258105
 	```
 
 ## Development
@@ -24,11 +24,11 @@
 	```
 - Add an owner policy
 	```sh
-	gcloud projects add-iam-policy-binding translator-246304 --member "serviceAccount:chet-dev@translator-246304.iam.gserviceaccount.com" --role "roles/owner"
+	gcloud projects add-iam-policy-binding selenium-258105 --member "serviceAccount:chet-dev@selenium-258105.iam.gserviceaccount.com" --role "roles/owner"
 	```
 - Create the credentials file.
 	```sh
-	gcloud iam service-accounts keys create credentials.json --iam-account chet-dev@translator-246304.iam.gserviceaccount.com
+	gcloud iam service-accounts keys create credentials.json --iam-account chet-dev@selenium-258105.iam.gserviceaccount.com
 	```
 - Start the development server (you may have to build the first bundle `npm run build` before you do this.)
 	```sh
@@ -36,7 +36,7 @@
 	```
 - Test that its working
 	```sh
-	curl curl http://localhost:8080/
+	curl http://localhost:8080/
 	```
 
 ## Deploying
@@ -45,14 +45,14 @@
 	```sh
 	npm run build
 	```
-- Edit the package.json deploy script to reference the name of the function you want to deploy. Currently, it's called `translate`.
+- Edit the package.json deploy script to reference the name of the function you want to deploy. Currently, it's called `selenium`.
 - Deploy
 	```sh
 	npm run deploy
 	```
 - The deployment should log an endpoint url that you can test.
 	```sh
-	curl https://us-central1-translator-246304.cloudfunctions.net/translate
+	curl https://us-central1-selenium-258105.cloudfunctions.net/selenium
 	```
 
 ## Resources
