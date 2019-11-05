@@ -19,6 +19,7 @@ import { Options } from "selenium-webdriver/chrome"
 import { IKey } from "selenium-webdriver/lib/input"
 import * as fs from "fs-extra"
 import * as path from "path"
+import * as chromium from "chromium-version"
 
 const defaultTimeoutMs = 60_000
 
@@ -26,9 +27,15 @@ export async function withBrowser(
 	fn: (browser: Browser) => Promise<void>,
 	headless = true
 ) {
+	const chromeOptions = new Options()
+	chromeOptions.setChromeBinaryPath(chromium.path)
+	if (headless) {
+		chromeOptions.headless()
+	}
+
 	const driver = new Builder()
 		.forBrowser("chrome")
-		.setChromeOptions(headless ? new Options().headless() : new Options())
+		.setChromeOptions(chromeOptions)
 		.build()
 	try {
 		await fn(new Browser(driver))
