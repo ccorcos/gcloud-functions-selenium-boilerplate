@@ -29,6 +29,7 @@ export async function withBrowser(
 ) {
 	const chromeOptions = new Options()
 	chromeOptions.setChromeBinaryPath(chromium.path)
+	chromeOptions.addArguments("--no-sandbox")
 	chromeOptions.addArguments("--disable-dev-shm-usage") // overcome limited resource problems
 	if (headless) {
 		chromeOptions.headless()
