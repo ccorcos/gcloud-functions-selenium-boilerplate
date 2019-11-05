@@ -12,7 +12,7 @@
 		"watch-tsc": "tsc --watch",
 		"server": "GOOGLE_APPLICATION_CREDENTIALS=credentials.json functions-framework --target=default",
 		"build": "rm -rf build && tsc",
-		"deploy": "gcloud functions deploy selenium --runtime nodejs10 --entry-point default --trigger-http --memory=1024MB --timeout=300s",
+		"deploy": "gcloud functions deploy selenium --runtime nodejs10 --entry-point default --trigger-http --memory=2048MB --timeout=540s",
 		"release": "npm run build && npm run deploy"
 	},
 	"keywords": [],
