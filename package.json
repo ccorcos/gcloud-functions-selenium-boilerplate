@@ -23,7 +23,7 @@
 		"chromium-version": "^78.0.0",
 		"fs-extra": "^8.1.0",
 		"lodash": "4.17.15",
-		"moment": "^2.24.0",
+		"moment": "^2.29.2",
 		"selenium-webdriver": "^4.0.0-alpha.5"
 	},
 	"devDependencies": {
